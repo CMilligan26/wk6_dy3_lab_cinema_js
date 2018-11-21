@@ -11,7 +11,7 @@ Cinema.prototype.findByTitle = function (filmTitle) {
 };
 
 Cinema.prototype.filterByProperty = function (property, search) {
-  return this.films.filter(film => film[`${property}`] === search);
+  return this.films.filter(film => film[property] === search);
 };
 
 Cinema.prototype.anyFilmsOfYear = function (year) {
